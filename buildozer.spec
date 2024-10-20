@@ -1,12 +1,13 @@
 
 [app]
 title = ImageScraping
-package.name = scrape
-package.domain = com.image
+package.name = image
+package.domain = com.scrape
 android.archs = arm64-v8a
 source.main = main.py
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,dm
+requirements = python3,kivy,kivymd,requests,beautifulsoup4
 orientation = portrait
 source.include_exts = py,png,jpg,jpeg,kv,atlas,dm
 fullscreen = 0
