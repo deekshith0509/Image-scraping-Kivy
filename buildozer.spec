@@ -16,9 +16,9 @@ android.presplash_color = #FFFFFF
 debug = 1
 android.allow_backup = True
 android.logcat = True
-android.api = 31
+android.api = 33
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 21
+android.minapi = 31
 android.ndk = 25b
 log_level = 2
