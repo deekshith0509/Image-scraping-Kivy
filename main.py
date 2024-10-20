@@ -29,7 +29,7 @@ class MainScreen(MDScreen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.setup_ui()
-        if platform == 'linux':
+        if platform == 'android':
             self.check_permissions()
 
     def setup_ui(self):
@@ -94,12 +94,12 @@ class MainScreen(MDScreen):
         self.add_widget(layout)
 
     def check_permissions(self):
-        if platform == 'linux': ##########################experimental android has to be replaced.
+        if platform == 'android': ##########################experimental android has to be replaced.
             from android.permissions import request_permissions, Permission
             request_permissions([Permission.WRITE_EXTERNAL_STORAGE, Permission.INTERNET])
 
     def get_download_folder(self):
-        if platform == 'linux':
+        if platform == 'android':
             return '/sdcard/Download/scraped_images'
         else:
             return os.path.join(os.path.expanduser('~'), 'Downloads', 'scraped_images')
