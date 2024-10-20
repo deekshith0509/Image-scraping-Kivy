@@ -1,4 +1,3 @@
-
 [app]
 title = ImageScraping
 package.name = image
@@ -9,7 +8,6 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,dm
 requirements = python3,kivy,kivymd,requests,beautifulsoup4
 orientation = portrait
-source.include_exts = py,png,jpg,jpeg,kv,atlas,dm
 fullscreen = 0
 version = 0.2
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
